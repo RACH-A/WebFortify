@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug WebFortify.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/WebFortify.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug services.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/services.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Pricing.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/Pricing.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug contact.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/contact.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug blog.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/blog.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug about.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/about.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+[debug] [2024-09-16T11:34:58.496Z] ----------------------------------------------------------------------
+[debug] [2024-09-16T11:34:58.500Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-16T11:34:58.501Z] CLI Version:   13.17.0
+[debug] [2024-09-16T11:34:58.502Z] Platform:      win32
+[debug] [2024-09-16T11:34:58.502Z] Node Version:  v20.16.0
+[debug] [2024-09-16T11:34:58.502Z] Time:          Mon Sep 16 2024 17:04:58 GMT+0530 (India Standard Time)
+[debug] [2024-09-16T11:34:58.502Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-16T11:34:58.577Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-16T11:34:58.578Z] > authorizing via signed-in user (vrushalipal123@gmail.com)
+[debug] [2024-09-16T11:34:58.578Z] [iam] checking project webfortify-6ff34 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-16T11:34:58.580Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfortify-6ff34:testIamPermissions [none]
+[debug] [2024-09-16T11:34:58.580Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfortify-6ff34:testIamPermissions x-goog-quota-user=projects/webfortify-6ff34
+[debug] [2024-09-16T11:34:58.581Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfortify-6ff34:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T11:35:00.405Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfortify-6ff34:testIamPermissions 200
+[debug] [2024-09-16T11:35:00.406Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfortify-6ff34:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-16T11:35:00.408Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webfortify-6ff34 [none]
+[debug] [2024-09-16T11:35:01.212Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webfortify-6ff34 200
+[debug] [2024-09-16T11:35:01.212Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webfortify-6ff34 {"projectId":"webfortify-6ff34","projectNumber":"859946390538","displayName":"WebFortify","name":"projects/webfortify-6ff34","resources":{"hostingSite":"webfortify-6ff34"},"state":"ACTIVE","etag":"1_320f264e-cb2f-432d-96c0-4e82b00c948e"}
+[info] 
+[info] === Deploying to 'webfortify-6ff34'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-09-16T11:35:01.228Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webfortify-6ff34/versions [none]
+[debug] [2024-09-16T11:35:01.228Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webfortify-6ff34/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-09-16T11:35:02.846Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webfortify-6ff34/versions 200
+[debug] [2024-09-16T11:35:02.846Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webfortify-6ff34/versions {"name":"projects/859946390538/sites/webfortify-6ff34/versions/2dbec2a9da194dd8","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[webfortify-6ff34]: beginning deploy... 
+[info] i  hosting[webfortify-6ff34]: found 298821 files in . 
+[debug] [2024-09-16T11:35:52.674Z] [hosting] uploading with 200 concurrency
+[debug] [2024-09-16T11:35:52.675Z] [hosting] hash cache [] not populated
+[debug] [2024-09-16T11:35:52.782Z] Error: EBUSY: resource busy or locked, open 'C:\Users\USER\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-16T11:35:52.784Z] Error: EBUSY: resource busy or locked, open 'C:\Users\USER\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-16T11:35:52.786Z] Error: EBUSY: resource busy or locked, open 'C:\Users\USER\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-16T11:35:52.801Z] Error: EISDIR: illegal operation on a directory, read
+[error] 
+[error] Error: An unexpected error has occurred.

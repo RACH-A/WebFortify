@@ -1,0 +1,4 @@
+# Exclude system files and directories
+ntuser.dat
+ntuser.dat.LOG1
+ntuser.dat.LOG2

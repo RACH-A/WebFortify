@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #000;
+            padding: 20px 0;
+        }
+        .logo {
+            float: left;
+        }
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .search-bar {
+            float: right;
+        }
+        .contact {
+            background-color: #FF0000; /* Neon Red */
+            padding: 50px 0;
+        }
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent Black */
+            padding: 40px; /* Increased padding */
+            border-radius: 20px; /* Increased border radius */
+            max-width: 800px; /* Increased max-width */
+            margin: 0 auto; /* Center the form */
+        }
+        .form-group {
+            margin-bottom: 30px; /* Increased space between form groups */
+        }
+        .form-control {
+            background-color: #1A1A1A; /* Very Dark Gray */
+            color: #00FFFF; /* Cyan */
+            border: 2px solid #00FFFF; /* Thicker Cyan border */
+            border-radius: 15px; /* Increased curved corners for inputs */
+            padding: 20px; /* Increased padding inside inputs */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in width */
+            height: auto; /* Allow height to adjust based on padding */
+            font-size: 18px; /* Larger font size */
+        }
+        input.form-control {
+            height: 60px; /* Increased height for input boxes */
+        }
+        textarea.form-control {
+            min-height: 200px; /* Increased height for textarea */
+        }
+        .form-control:focus {
+            background-color: #2A2A2A; /* Dark Gray */
+            border-color: #00FFFF; /* Cyan */
+        }
+        .btn-primary {
+            background-color: #00FFFF; /* Cyan */
+            color: #000000; /* Black */
+            border: none;
+            border-radius: 15px; /* Increased curved corners for button */
+            padding: 15px 30px; /* Increased padding for button */
+            font-size: 18px; /* Larger font size */
+        }
+        .btn-primary:hover {
+            background-color: #00CCCC; /* Darker Cyan */
+        }
+        label {
+            color: #00FFFF; /* Cyan */
+            margin-bottom: 10px; /* Increased space below labels */
+            display: inline-block;
+            font-size: 18px; /* Larger font size */
+        }
+        h1, p {
+            color: #FFFFFF; /* White */
+        }
+        .navbar {
+            float: right;
+        }
+        .header-background {
+            background-color: #000;
+            padding: 10px 0;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            margin-right: 20px;
+        }
+        .neon-outline {
+            box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF;
+            border: 1px solid #00FFFF;
+        }
+        .neon-text {
+            text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+        }
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        .message-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .message-content {
+            width: 200px;  /* Increased from 4cm to 200px */
+            height: 200px; /* Increased from 4cm to 200px */
+            background-color: #1A1A1A;
+            color: #00FFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px; /* Slightly increased for better proportion */
+            box-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF; /* Increased glow effect */
+            text-align: center;
+            font-size: 24px; /* Increased font size */
+            animation: scaleIn 0.3s forwards;
+            padding: 20px; /* Added padding for better text placement */
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar with Search Bar -->
+    <div class="header-background">
+        <header class="header-content">
+            <img src="images/logo.jpg.jpg" width="100" height="100" alt="Logo" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="WebFortify.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <div class="container">
+            <h1 style="
+                background-image: url('images/contact.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: white;
+                padding: 50px 20px;
+                text-align: center;
+                margin-bottom: 30px;
+                border-radius: 10px;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            ">Contact Us</h1>
+            <p>If you have any questions or inquiries about our services, feel free to reach out using the form below. We'll get back to you as soon as possible.</p>
+            <form id="contactForm" action="submit.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="number" name="number" class="form-control" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" class="form-control" placeholder="Your Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Message Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Message Box -->
+    <div id="successMessage" class="message-box">
+        <div class="message-content">
+            <p>Message sent! We Will Contact You Soon.</p>
+        </div>
+    </div>
+
+    <!-- Contact Information and Social Media sections removed -->
+
+    <footer style="padding: 20px 0; background-color: #1A1A1A; color: #00FFFF;" class="neon-outline">
+        <div class="container">
+            <div class="footer-grid" style="display: flex; justify-content: space-between;">
+                <div class="contact-info" style="padding: 10px;">
+                    <h3 class="neon-text">Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +1 (+91) 9881172936</p>
+                    <p><i class="fas fa-envelope"></i> tpio1154@gmail.com</p>
+                </div>
+                <div class="social-media" style="padding: 10px;">
+                    <h3 class="neon-text">Follow Us</h3>
+                    <a href="#" style="color: #00FFFF; font-size: 24px; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="color: #00FFFF; font-size: 24px; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: #00FFFF; font-size: 24px;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <p style="margin-top: 15px; text-align: center;">&copy; 2024 WebFortify. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Add Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Add JavaScript for form submission, message box, and console logging -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('number').value;
+            var company = document.getElementById('company').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            // Log form data to console
+            console.log('Form Submission:');
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Phone:', phone);
+            console.log('Company:', company);
+            console.log('Subject:', subject);
+            console.log('Message:', message);
+
+            // Simulate form submission (replace this with actual form submission logic)
+            setTimeout(function() {
+                showMessage();
+            }, 1000);
+        });
+
+        function showMessage() {
+            var messageBox = document.getElementById('successMessage');
+            messageBox.style.display = 'flex';
+            messageBox.style.opacity = '1';
+            setTimeout(function() {
+                messageBox.style.opacity = '0';
+                setTimeout(function() {
+                    messageBox.style.display = 'none';
+                }, 500);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+

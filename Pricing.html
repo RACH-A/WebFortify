@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our pricing plans for web services">
+    <meta name="keywords" content="pricing, plans, web services">
+    <title>Pricing Plans - Your Digital Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .pricing-plan {
+            border: 2px solid #8A2BE2; /* Neon purple border */
+            border-radius: 15px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0 0 10px 2px rgba(138, 43, 226, 0.5); /* Neon purple glow */
+        }
+        .pricing-plan:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.8); /* Brighter neon purple glow on hover */
+        }
+        .pricing-plan.basic {
+            background-color: #8B0000; /* Deep red background */
+            color: white; /* White text for better contrast */
+        }
+        .pricing-plan.basic:hover {
+            background-color: #A52A2A;
+        }
+        .pricing-plan.starter {
+            background-color: #000000; /* Black background */
+            color: white; /* White text for better contrast */
+        }
+        .pricing-plan.starter:hover {
+            background-color: #333333; /* Slightly lighter black on hover */
+        }
+        .pricing-plan.pro {
+            background-color: #C0C0C0; /* Silver background */
+            color: #333; /* Darker text for better contrast on silver */
+        }
+        .pricing-plan.pro:hover {
+            background-color: #D3D3D3; /* Lighter silver on hover */
+        }
+        .pricing-plan.team {
+            background-color: aquamarine;
+        }
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .plan-price {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        .plan-features {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;  /* Rounded corners for the button */
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .disclaimer {
+            margin-top: 60px; /* Increase this value to add more space */
+            padding: 20px;
+            background-color: #e40707;
+            border-radius: 8px;
+        }
+        .disclaimer p {
+            margin: 0;
+        }
+        .pricing-heading {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #e11010; /* Neon red color */
+            background-image: url('images/pricing\ \(2\).png');
+            background-size: 150%; /* Zoom out the image */
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 5px #C0C0C0, 0 0 20px 10px rgba(192, 192, 192, 0.5); /* Neon silver outline */
+        }
+        .section-spacer {
+            height: 150px; /* Adjust this value to increase or decrease the space */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.jpg.jpg" alt="Logo" class="logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="WebFortify.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="pricing-heading">Pricing</h1>
+        <div class="pricing-container">
+            <div class="pricing-plan basic">
+                <img src="images/Starter Web Design.png" alt="Starter Web Design" width="200" height="300">
+                <div class="plan-name">Starter Web Design Package</div>
+                <div class="plan-price">₹1500</div>
+                <ul class="plan-features">
+                    <li>Affordable Pricing:- Professional web design services for just ₹1500.</li>
+                    <li>All-In-One:- Includes design, content, responsiveness, and SEO setup.</li>
+                    <li>Cost-Effective Solution:- Perfect for small businesses and personal websites.</li>
+                    <li>Quality at Low Cost:- Get a modern, mobile-friendly website without breaking the bank.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan starter">
+                <img src="images/Basic Web Design.png" alt="Starter Web Design" width="200" height="300">
+                <div class="plan-name">Basic Web Design Package</div>
+                <div class="plan-price">₹2500</div>
+                <ul class="plan-features">
+                    <li>Comprehensive Design: Get a 3-5 page website for just ₹2500.</li>
+                    <li>User Interaction: Includes a basic contact form for easy communication.</li>
+                    <li>Responsive & Optimized: Mobile-friendly design with on-page SEO for better visibility.</li>
+                    <li>Free Maintenance: Enjoy 1 month of free support and updates.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan pro">
+                <img src="images/Website Redesign.png" alt="Pro Web Design" width="200" height="300">
+                <div class="plan-name">Website Redesign Package</div>
+                <div class="plan-price">₹3500</div>
+                <ul class="plan-features">
+                    <li>Enhanced UI/UX: Redesign your existing website for a modern, user-friendly experience.</li>
+                    <li>Content Optimization: Seamlessly migrate and optimize your content for better performance.</li>
+                    <li>Improved Responsiveness & SEO: Boost mobile responsiveness and search engine ranking.</li>
+                    <li>Complete Support: Includes 1-month free maintenance and basic security setup for added protection.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan team" style="background-color:#00FFFF; color: black;">
+                <img src="images/Basic-e.png" alt="Basic-e" width="200" height="300">
+                <div class="plan-name">Basic E-Commerce Package</div>
+                <div class="plan-price">₹4500</div>
+                <ul class="plan-features">
+                    <li>Affordable E-commerce Setup: Get your online store up and running for just ₹4500.</li>
+                    <li>Product Integration: Setup for up to 10 products with payment gateway integration.</li>
+                    <li>Mobile-Friendly Design: Optimized for seamless shopping on all devices.</li>
+                    <li>Secure & Optimized: Includes basic SEO, security features, and 1-month free maintenance.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan" style="background-color: #FFD700;">
+                <img src="images/Standard-e.png" alt="Standard-e" width="200" height="300">
+                <div class="plan-name">Standard E-Commerce Package</div>
+                <div class="plan-price">₹7500</div>
+                <ul class="plan-features">
+                    <li>Comprehensive E-commerce Solution: Responsive design and setup for up to 30 products for ₹7500.</li>
+                    <li>Advanced Payment Options: Integration of UPI, Net-banking, Credit/Debit cards, and more.</li>
+                    <li>Enhanced User Experience: Product filtering, search functionality, and blog/news integration.</li>
+                    <li>SEO & Maintenance: Advanced SEO and 2 months of free maintenance for ongoing support.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan" style="background-color: #32CD32;">
+                <img src="images/Premium-e.png" alt="Premium-e" width="200" height="300">
+                <div class="plan-name">Premium E-Commerce Package</div>
+                <div class="plan-price">₹12500</div>
+                <ul class="plan-features">
+                    <li>Unlimited Product Setup: Manage unlimited products with a responsive design for ₹12,500.</li>
+                    <li>Enhanced Security & SEO: Advanced security features, customer management, and SEO setup.</li>
+                    <li>Marketing Integration: Includes social media tools and marketing feature integration.</li>
+                    <li>Complete E-commerce Solution: Payment gateway integration, product search/filter, blog, and 3-months free maintenance.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan" style="background-color: #E0115F;">
+                <img src="images/Cybersecurity service.png" alt="Cybersecurity service" width="200" height="300">
+                <div class="plan-name">Cybersecurity Service Package</div>
+                <div class="plan-price">₹700/month</div>
+                <ul class="plan-features">
+                    <li>Affordable Protection: Comprehensive cybersecurity for just ₹700/month.</li>
+                    <li>Regular Updates: Ongoing security patches and updates to keep your site safe.</li>
+                    <li>Detailed Audits: Receive a monthly security audit report for full transparency.</li>
+                    <li>24/7 Monitoring: Continuous monitoring for vulnerabilities to ensure peace of mind.</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+
+            <div class="pricing-plan" style="background-color: #00FFFF; color: black;">
+                <img src="images/maintenance.jpg" alt="Maintenance" width="200" height="300">
+                <div class="plan-name">Maintenance and Service Package</div>
+                <div class="plan-price">Different for each package</div>
+                <ul class="plan-features">
+                    <li>Single-page website maintenance:- ₹500/month</li>
+                    <li>Multi-page website maintenance:- ₹600/month</li>
+                    <li>Simple E-Commerce website maintenance:- ₹1000/month</li>
+                    <li>Standard E-Commerce website maintenance:- ₹1500/month</li>
+                    <li>Premium E-Commerce website maintenance:- ₹2000/month</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Choose Plan</a>
+            </div>
+ 
+        <div class="disclaimer">
+            <p><strong>Disclaimer:</strong> We have not integrated any payment gateway for you to choose a plan. First, we need to inspect the content you want to showcase on the website to ensure it doesn't violate any rules and regulations. The "Choose Plan" button will take you to the contact page. Please fill out your information and message us. Our team will contact you soon.</p>
+        </div>
+    </main>
+
+    <footer style="
+        background-color: #1a0033;
+        color: #ff00ff;
+        padding: 40px 0 20px;
+        font-family: Arial, sans-serif;
+        border: 4px solid #00FFFF;
+        box-shadow: 0 0 10px #00FFFF, inset 0 0 10px #00FFFF;
+    ">
+        <div class="container" style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        ">
+            <div class="footer-column" style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3 style="color: #00FFFF; margin-bottom: 15px; font-size: 18px;">Contact Us</h3>
+                <p style="line-height: 1.6; font-size: 14px;">
+                    Phone: (+91) 9881172936<br>
+                    Email: tpio1154@gmail.com
+                </p>
+            </div>
+            <div class="footer-column" style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3 style="color: #00FFFF; margin-bottom: 15px; font-size: 18px;">Follow Us</h3>
+                <div class="social-media" style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #ff00ff; margin-top: 20px; padding-top: 20px; text-align: center;">
+            <p style="font-size: 14px;">&copy; 2024 WebFortify. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

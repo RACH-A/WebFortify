@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about our digital agency.">
+    <meta name="keywords" content="about us, team, mission">
+    <title>About Us - Your Digital Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .flex-container { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .column { flex-basis: 48%; }
+        .full-width { flex-basis: 100%; }
+        section { margin-bottom: 60px; }
+        h1, h2 { text-align: center; margin-bottom: 30px; }
+        .team-members { display: flex; justify-content: center; gap: 30px; }
+        .team-member { text-align: center; }
+        .team-member img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; }
+        .visual-elements img { max-width: 100%; height: auto; }
+        .call-to-action { background-color: #f5f5f5; padding: 40px 0; text-align: center; }
+        .btn { display: inline-block; padding: 10px 20px; background-color: #4A0E4E; color: white; text-decoration: none; border-radius: 5px; }
+        .two-column-layout { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .left-column, .right-column { flex-basis: 48%; }
+        @media (max-width: 768px) { .left-column, .right-column { flex-basis: 100%; } }
+        
+        .left-column section, .right-column section {
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px #C0C0C0, inset 0 0 5px #C0C0C0;
+            border: 2px solid #C0C0C0;
+        }
+        
+        .left-column section:hover, .right-column section:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transform: translateY(-5px);
+        }
+        
+        .left-column section:active, .right-column section:active {
+            background-color: #f0f0f0;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.jpg.jpg" width="100" height="100" alt="Logo" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="WebFortify.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="headline-introduction" style="background-image: url('images/tech-savvy.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 60px 0; position: relative;">
+            <div class="container" style="position: relative; z-index: 2; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+                <h1 style="text-align: center;">Welcome to WebFortify</h1>
+                <p style="text-align: center; max-width: 800px; margin: 20px auto; font-size: 1.2em;">We are dedicated to helping businesses thrive in the digital landscape by delivering top-quality web development, cybersecurity, and management services. Our expertise is your success.</p>
+            </div>
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 1;"></div>
+        </section>
+
+        <div class="container two-column-layout">
+            <div class="left-column">
+                <section class="about" style="background-color: #FF7F50; border-color: #FF6347;">
+                    <h2 style="color: #ffffff;">About Our Digital Agency</h2>
+                    <p style="color: #ffffff;">Our mission is to provide top-notch <span style="color: #ffffff;">web development</span>, <span style="color: #ffffff;">website management</span>, and <span style="color: #ffffff;">cybersecurity</span> services.</p>
+                    <p style="color: #ffffff;">WebFortify is a cutting-edge digital agency dedicated to helping businesses thrive in the digital age. Our mission is to deliver high-quality web development, cybersecurity, and website management services that empower businesses to establish a strong online presence and protect their digital assets.</p>
+                    <p style="color: #ffffff;">We specialize in creating visually stunning, responsive websites tailored to meet the specific needs of each client, ensuring that their online platform is both functional and engaging. Our cybersecurity solutions are designed to safeguard businesses against digital threats, ensuring that sensitive data remains protected and secure. Additionally, our website management services provide seamless, ongoing support to keep websites running smoothly, updated, and optimized for performance.</p>
+                    <p style="color: #ffffff;">At WebFortify, we pride ourselves on offering personalized, client-focused solutions that drive growth and success. Whether you're looking to build a new website, enhance your digital security, or streamline your website management processes, WebFortify is your trusted partner for achieving digital excellence.</p>
+                </section>
+
+                <section class="core-values" style="background-color: #1a0033; color: #ff00ff; border-color: #ff00ff;">
+                    <h2 style="color: #ff66ff;">Core Values</h2>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li><strong style="color: #ff99ff;">Innovation:</strong> We continuously push the boundaries of creativity and technology to deliver cutting-edge solutions that meet the evolving needs of our clients.</li>
+                        <li><strong style="color: #ff99ff;">Integrity:</strong> We uphold the highest standards of honesty and transparency in every project, ensuring trust and reliability in our services.</li>
+                        <li><strong style="color: #ff99ff;">Client-Centricity:</strong> Our clients' success is our top priority. We listen, understand, and tailor our services to meet their unique goals and challenges.</li>
+                        <li><strong style="color: #ff99ff;">Excellence:</strong> We are committed to delivering top-quality results through meticulous attention to detail and a dedication to continuous improvement.</li>
+                        <li><strong style="color: #ff99ff;">Security:</strong> We prioritize the safety and protection of our clients' digital assets, implementing robust cybersecurity measures to safeguard their businesses.</li>
+                        <li><strong style="color: #ff99ff;">Collaboration:</strong> We believe in the power of teamwork, both within our agency and with our clients, to achieve the best possible outcomes.</li>
+                        <li><strong style="color: #ff99ff;">Adaptability:</strong> We embrace change and are always ready to adapt our strategies to the dynamic digital landscape, ensuring our clients stay ahead of the curve.</li>
+                    </ul>
+                </section>
+
+                <section class="behind-the-scenes" style="background-color: #00ffff; color: #006666; border-color: #00cccc;">
+                    <h2 style="color: #008080;">Behind the Scenes</h2>
+                    <p>From brainstorming sessions to code sprints, our team's journey has been full of learning, challenges, and triumphs. Every project is an opportunity to push boundaries and create something <span style="color: #00a3a3;">exceptional</span>.</p>
+                    <p>Behind the scenes at WebFortify, our team is a blend of creative minds, technical experts, and strategic thinkers working together to deliver exceptional digital solutions. Every project we undertake begins with a deep understanding of our clients' goals and the unique challenges they face in their industry.</p>
+                    <p>Our web developers meticulously craft websites that are not only aesthetically pleasing but also functionally robust and easy to navigate. Simultaneously, our cybersecurity specialists work tirelessly to implement advanced security protocols that safeguard clients' online assets from potential threats.</p>
+                    <p>Behind every seamless website experience, our management services team ensures that everything is running smoothly—from regular updates to performance optimization, ensuring sites are always current, secure, and efficient. Collaboration and innovation fuel our operations, with constant brainstorming and problem-solving sessions to push the boundaries of what we can achieve for our clients.</p>
+                    <p>At WebFortify, it's this dedication, teamwork, and attention to detail that create the high-quality results our clients expect, ensuring their success is always our priority.</p>
+                    <p style="font-style: italic; color: #004d4d;">Fun Fact: Our agency was started in a small garage with just two developers and a big vision!</p>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="mission-vision" style="background-color: #FF7F50; color: #ffffff; border-color: #FF6347;">
+                    <h2 style="color: #ffffff;">Mission and Vision</h2>
+                    <p><strong style="color: #ffffff;">Mission:</strong> At WebFortify, our mission is to equip businesses of all sizes with cutting-edge, tailor-made digital solutions that drive growth, improve efficiency, and secure their operations in an increasingly connected world. We take a client-centric approach to everything we do, ensuring that each business we work with gets personalized web development, cybersecurity, and website management services that meet their specific needs and goals. Whether it's building responsive websites that reflect a brand's identity or implementing comprehensive cybersecurity protocols to protect valuable data, we make it our mission to fortify your digital presence with precision and care.</p>
+                    <p><strong style="color: #ffffff;">Vision:</strong> Our vision is to be recognized as a premier digital partner on a global scale. We aim to build lasting relationships with businesses by fostering trust, transparency, and results. At WebFortify, we are not just service providers; we are collaborators who align ourselves with our clients' success. Our vision is to continuously push the boundaries of digital innovation, creating user-friendly platforms, delivering proactive security solutions, and ensuring seamless management of digital infrastructure. We see ourselves as trailblazers in setting new standards for quality, accountability, and value in the digital landscape, committed to helping businesses not only keep pace with technological advancements but leverage them to achieve sustainable, long-term growth.</p>
+                    <p>Our attention to detail, constant pursuit of innovation, and dedication to our clients' success are what drive us, making WebFortify not just a service provider, but a vital partner in your business journey.</p>
+                </section>
+
+                <section class="unique-selling-points" style="background-color: #1a0033; color: #ff00ff; border-color: #ff00ff;">
+                    <h2 style="color: #ff66ff;">What Makes Us Unique?</h2>
+                    <p>At <span style="color: #ff99ff;">Your Digital Agency</span>, we blend creativity with cutting-edge technology to deliver custom solutions that make businesses stand out. Whether it's <span style="color: #ff99ff;">web development</span>, <span style="color: #ff99ff;">cybersecurity</span>, or <span style="color: #ff99ff;">digital management</span>, our innovative approach sets us apart from the competition.</p>
+                    
+                    <p>What makes WebFortify truly unique is our holistic approach to digital services, combining expertise in web development, cybersecurity, and website management under one roof. Unlike many agencies that specialize in only one area, we understand that a successful online presence requires more than just a visually appealing website; it demands robust security, seamless functionality, and ongoing maintenance. Our commitment to tailoring solutions to meet the specific needs of each client sets us apart. We don't believe in a one-size-fits-all approach—every project we undertake is designed with your unique business objectives in mind.</p>
+                    
+                    <p>Our team of highly skilled professionals stays ahead of industry trends, ensuring that we offer the latest technologies and innovations to help our clients succeed in an ever-evolving digital landscape. Additionally, our unwavering focus on client collaboration, transparent communication, and delivering measurable results ensures that we not only meet but exceed expectations. At WebFortify, we pride ourselves on our ability to fortify businesses' digital assets, providing not only beautiful, user-friendly websites but also the protection and management needed to keep them running smoothly and securely. We're not just building websites—we're building long-term partnerships grounded in trust, reliability, and exceptional service.</p>
+                </section>
+
+                <section class="future-goals" style="background-color: #00ffff; color: #006666; border-color: #00cccc;">
+                    <h2 style="color: #008080;">Future Goals</h2>
+                    <p>As we move forward, we plan to expand our services globally and introduce new product offerings, including <span style="color: #00a3a3;">AI-driven security solutions</span> and <span style="color: #00a3a3;">advanced website analytics tools</span>. Stay tuned for exciting updates!</p>
+                    <p>At WebFortify, our future goals are driven by a commitment to innovation, growth, and helping our clients navigate the rapidly evolving digital world. In the coming years, we aim to:</p>
+                    <ul>
+                        <li>Integrate advanced technologies like AI and ML into our services</li>
+                        <li>Build smarter, more intuitive websites that adapt to user behaviors</li>
+                        <li>Strengthen our cybersecurity solutions with proactive threat detection</li>
+                        <li>Expand our reach to a global audience</li>
+                        <li>Invest in continuous learning and professional development for our team</li>
+                    </ul>
+                    <p>Our ultimate goal is to provide even greater value to our clients, foster long-term partnerships, and establish WebFortify as a trusted leader in the digital services space.</p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Watch Our Story Section -->
+        <section class="watch-our-story" style="
+            padding: 60px 0;
+            background-color: #9da4a4;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        ">
+            <div class="container" style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            ">
+                <h2 style="color: #000000; text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); margin-bottom: 30px;">Watch Our Story</h2>
+                <div class="video-container" style="
+                    width: 560px;
+                    max-width: 100%;
+                    margin: 30px auto;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                    border-radius: 10px;
+                    overflow: hidden;
+                ">
+                    <video width="100%" height="auto" controls style="display: block;">
+                        <source src="videos/our-story.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p style="color: #000000; margin-top: 30px; font-size: 1.1em; max-width: 600px;">Discover how we've been transforming businesses through innovative digital solutions.</p>
+            </div>
+        </section>
+
+        <section class="call-to-action" style="
+            background-color: #000000; 
+            padding: 40px 0; 
+            margin-bottom: 0;
+            border: 4px solid #00FFFF;
+            box-shadow: 0 0 10px #00FFFF, inset 0 0 10px #00FFFF;
+        ">
+            <div class="container">
+                <h2 style="color: #D10000;">Ready to Transform Your Digital Presence?</h2>
+                <p style="color: #FF3030;">Contact us today to discuss how we can help you achieve your goals. Let's build something amazing together!</p>
+                <a href="contact.html" class="btn" style="background-color: #D10000; color: white; border: 2px solid #FF3030; transition: all 0.3s ease;">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer style="
+        background-color: #1a0033;
+        color: #ff00ff;
+        padding: 40px 0 20px;
+        font-family: Arial, sans-serif;
+        border: 4px solid #00FFFF;
+        box-shadow: 0 0 10px #00FFFF, inset 0 0 10px #00FFFF;
+    ">
+        <div class="container" style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        ">
+            <div class="footer-column" style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3 style="color: #00FFFF; margin-bottom: 15px; font-size: 18px;">Contact Us</h3>
+                <p style="line-height: 1.6; font-size: 14px;">
+                    Phone: (91) 9881172936<br>
+                    Email: tpio1154@gmail.com
+                </p>
+            </div>
+            <div class="footer-column" style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3 style="color: #00FFFF; margin-bottom: 15px; font-size: 18px;">Follow Us</h3>
+                <div class="social-media" style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" style="color: #ffffff; font-size: 14px; text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #ff00ff; margin-top: 20px; padding-top: 20px; text-align: center;">
+            <p style="font-size: 14px;">&copy; 2024 WebFortify. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Add this line before the closing </body> tag -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
